@@ -117,45 +117,194 @@ header.sticky ul li a{
     margin-bottom: 30px;
     color: #111;
 }
+.heading.white{
+    color:#fff;
+}
 .heading h2{
     font-weight: 600;
     font-size: 30px;
 }
 .content{
-    display: flex;
     align-items: center;
-    justify-content: space-around;
-    
 }
-.servicesBx{
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
-    
-}    
-.servicesBx image{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    display: block;
-} 
-.servicesBx ul{
-    font-size: 10px;
-    padding: 3px;
-    margin-left: 16px;
-    list-style: none;
-    
+
+.services{
+    background: #111;
 }
-.servicesBx h3{
-    display: inline-block;
-    padding:4px;
-    margin: 4px;
-}
-/* 
-.content{
+
+.services .content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
+.services .content .servicesBx{
+    
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    height: 350px;
+    width: 300px;
+    max-width: 400px;
+    margin:20px;
+    transition: 0.5s;
+    text-align: center;
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    flex-direction: column;
+
+}    
+
+.services .content .servicesBx:hover{
+ background: #2196f3;
+}
+
+
+.services .content .servicesBx img{
+   max-width: 80px;
+   filter: invert(1);
+}
+
+
+
+.services .content .servicesBx h2{
+    max-width: 80px;
+    filter: invert(1);
+}
+
+.services .content .servicesBx h2{
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+.work{
+    background: #525252;
+    text-align: center;
+    
+}
+
+.work .content{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.work .content .workBx{
+    width: 500px;
+    padding: 20px;
+    min-width: 300px;
+
+}
+
+.work .content .workBx img{
+    max-width: 100%;
+    transition: 0.5s;
+
+}
+
+.work .content .workBx img:hover{
+    max-width: 100%;
+    border:#2196f3 3px solid;
+
+}
+
+
+.contact{
+    background: #1a1717;
+    color:#2196f3;
+    
+}
+
+.contact .content{
+    border: #fff 1px solid;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact .content .form-contact{
+    padding: 15px;
+    border-top: #fff 1px solid;
+    border-bottom: #fff 1px solid;
+    height: 300px;
+    
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.contact .content .form-contact input{
+    text-align: center;
+    border-radius: 0;
+    border: #2196f3 1px solid;
+    color: black;
+}
+
+.contact .content .form-contact #message{
+    text-align: center;
+    border-radius: 0;
+    border: #2196f3 1px solid;
+    color: black;
+    height: 100px;
+}
+
+.contact .content .form-contact .btn{
+
+    background-color: 2196f3;
+    border:none;
+}
+
+.about{
+    border: black 1px solid;
+    text-align: center;
+
+}
+.about .social-links{
+    margin: 10px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-instagram {
+    background: #3B5998;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0d00;
+    color: white;
+}
+.fa-linkedin {
+    background: #047bb5;
+    color: white;
+}
+
+
+.fa-github {
+    background: #262626;
+    color: white;
+}
+
+
+
+/*
 .contentBx{
     padding-right: 30px;
 }

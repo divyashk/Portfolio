@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Portfolio</title>
 </head>
 <body>
@@ -13,9 +15,10 @@
         </div>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
     </header>
     <section class='banner'>
@@ -27,8 +30,8 @@
         </div>
     </section>
 
-    <section class='services'>
-        <div class='heading'>
+    <section class='services' id="skills">
+        <div class='heading white'>
             <h1>My Skills</h1>
         </div>
         
@@ -61,7 +64,7 @@
                     Video Editing
                 </h3>
                 <ul>
-                    <li>After - Effects</li>
+                    <li>AfterEffects</li>
                     <li>Premiere Pro</li>
                 </ul>
             </div>
@@ -78,17 +81,68 @@
         </div>
     </section>
     
-    <section class='about'>
+    <section class='work' id='work'>
+        <div class='heading white'>
+            <h2>
+                My Projects
+            </h2>
+        </div>
+        <div class="content">
+            <a href="https://blogin-now.herokuapp.com/">
+                <div class="workBx">
+                    <img src="../static/work/django.png" alt="">
+                </div>
+            </a>
+            <a href="http://beatit-app.herokuapp.com/">
+                <div class="workBx">
+                    <img src="../static/work/beatit.png" alt="">
+                </div>
+            </a>
+            <a href="http://flaskblog.divyasheel.com/">
+                <div class="workBx">
+                    <img src="../static/work/flask.png" alt="">
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- <section class='contact' id='contact'>
+        <div class='heading white'>
+            <h2>Contact me</h2>
+        </div>
+        <div class='content'>
+            <div class='filler'>
+                <h1>
+                    Leave your message
+                </h1>
+            </div>
+            <form class='form-contact'>
+                <input type="text" id='name' placeholder="Your name">
+                <input type="email" id='email' placeholder="Your email">
+                <input type="text" id='message' placeholder='Your message'>
+                <button type='submit' class='btn'>Send</button>
+            </form>
+        </div>
+    </section> -->
+
+
+    <section class='about' id='about'>
         <div class='heading'>
             <h2>About Me</h2>
             <p>
                 I am a Btech-CSE undergrad at IIT Mandi.
             </p>
-        </div>
-
-
+            <div class='social-links'>
+                <a href="#" class="fa fa-github"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                
+            </div>
+       </div>
     </section>
-
     
 
     <script type='text/javascript'>
