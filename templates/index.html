@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class='logo'>Portfolio</a>
+        <div class='toggle'>           
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class='banner'>
+        <div class='textBx'>
+            <h2>Hello, I'm <br><span>Divyasheel</span></h2>
+            <h3>This is my Portfolio</h3>
+            <a href="#" class='btn'>About Me</a>
+
+        </div>
+    </section>
+
+    <section class='services'>
+        <div class='heading'>
+            <h1>My Skills</h1>
+        </div>
+        
+        <div class='content'>
+            <div class='servicesBx'>
+                <img src="../static/backend.png">
+                <h3>
+                    Back-end Development
+                </h3>
+                <ul>
+                    <li>Django</li>
+                    <li>Flask</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+            <div class='servicesBx'>
+                <img src="../static/frontend.png">
+                <h3>
+                    Front-end Development
+                </h3>
+                <ul>
+                    <li>HTML - CSS</li>
+                    <li>Vanilla JS</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class='servicesBx'>
+                <img src="../static/video-editing.png">
+                <h3>
+                    Video Editing
+                </h3>
+                <ul>
+                    <li>After - Effects</li>
+                    <li>Premiere Pro</li>
+                </ul>
+            </div>
+            <div class='servicesBx'>
+                <img src="../static/photoshop.png">
+                <h3>
+                    Photo Editing
+                </h3>
+                <ul>
+                    <li>GIMP</li>
+                    <li>Photoshop</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class='about'>
+        <div class='heading'>
+            <h2>About Me</h2>
+            <p>
+                I am a Btech-CSE undergrad at IIT Mandi.
+            </p>
+        </div>
+
+
+    </section>
+
+    
+
+    <script type='text/javascript'>
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
