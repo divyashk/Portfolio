@@ -6,6 +6,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 section{
@@ -14,9 +15,10 @@ section{
 .banner{
     position : relative;
     min-height: 100vh;
-    background: url(#);
+    background: url(/static/page-back.jpg);
     background-color: black;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: right;
     display: flex;
     justify-content: space-between;
@@ -104,6 +106,7 @@ header ul li a {
     margin: 0 15px;
     color:#fff;
     text-decoration: none;
+    
 
 }
 
@@ -195,7 +198,7 @@ header.sticky ul li a{
 .work .content .workBx{
     width: 500px;
     padding: 20px;
-    min-width: 300px;
+    min-width: 100px;
 
 }
 
@@ -304,21 +307,78 @@ header.sticky ul li a{
 
 
 
-/*
-.contentBx{
-    padding-right: 30px;
-}
 
-.contentBx h3{
-    font-size: 24px;
-    margin-bottom: 10px;
 
-}
-.w50{
-    min-width: 50%;
-    
-}
-image{
-    max-width: 100%;
+@media (max-width: 991px)
+{
+    header, header.sticky{
+        padding: 20px 50px;
+    }
+    .menu{
+        position: fixed;
+        top:80px;
+        left:-100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    .menu.active{
+        left: 0%
+    }
+    header ul li a{
+        color: #111; 
 
-} */
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(../static/navbar/menu.png);
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+
+    }
+    .toggle.active{
+        width: 40px;
+        height: 40px;
+        background: url(../static/navbar/close.png);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    header.sticky .toggle{
+        filter: invert(1);
+
+    }
+    section{
+        padding: 100px 50px;
+
+    }
+    .banner{
+        padding: 150px 50px 100px;
+
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+
+    }
+    .heading h2{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    header ul li a{
+        font-size: 40px;
+        padding: 20px;
+    }
+}

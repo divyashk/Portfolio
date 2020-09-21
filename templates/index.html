@@ -10,22 +10,22 @@
 </head>
 <body>
     <header>
-        <a href="#" class='logo'>Portfolio</a>
-        <div class='toggle'>           
+        <a href="#" class='logo'>My Portfolio</a>
+        <div class='toggle' onclick="toggleMenu()">           
         </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+        <ul class='menu'>
+            <li><a href="#" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+            
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
         </ul>
     </header>
     <section class='banner'>
         <div class='textBx'>
-            <h2>Hello, I'm <br><span>Divyasheel</span></h2>
+            <h2>Hey, I'm <br><span>Divyasheel</span></h2>
             <h3>This is my Portfolio</h3>
-            <a href="#" class='btn'>About Me</a>
+            <a href="#about" class='btn'>About Me</a>
 
         </div>
     </section>
@@ -134,11 +134,11 @@
                 I am a Btech-CSE undergrad at IIT Mandi.
             </p>
             <div class='social-links'>
-                <a href="#" class="fa fa-github"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
+                <a href="https://github.com/divyashk" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/divyasheel-kumar18/" class="fa fa-linkedin"></a>
+                <a href="https://www.youtube.com/channel/UC91Xe1r_V25MJ_76SM_wS1g/featured?view_as=subscriber" class="fa fa-youtube"></a>
+                <a href="https://www.facebook.com/divyasheel.kumar" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/divyasheel18/" class="fa fa-instagram"></a>
                 
             </div>
        </div>
@@ -150,6 +150,14 @@
             var header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         });
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
     </script>
 </body>
 </html>
