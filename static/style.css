@@ -8,21 +8,28 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-
+a:hover{
+    color:#f8002f;
+}
+a.btn:hover{
+    color: black;
+}
 section{
     padding:100px;
 }
 .banner{
     position : relative;
     min-height: 100vh;
-    background: url(/static/page-back.jpg);
+    
     background-color: black;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 .banner h2{
     font-size: 3em;
@@ -43,10 +50,17 @@ section{
     font-weight: 500;
 
 }
+.banner img{
+    border-radius: 50%;
+    width: 50%;
+    margin:0;
+    padding:0;
+    min-width: 500px;
+}
 
 .btn{
     position: relative;
-    background-color: #2196f3;
+    background-color: #f8002f;
     display: inline-block;
     color:#fff;
     margin-top: 20px;
@@ -160,7 +174,7 @@ header.sticky ul li a{
 }    
 
 .services .content .servicesBx:hover{
- background: #2196f3;
+ background: #f8002f;
 }
 
 
@@ -184,6 +198,7 @@ header.sticky ul li a{
 .work{
     background: #525252;
     text-align: center;
+    min-height: 400px;
     
 }
 
@@ -196,7 +211,7 @@ header.sticky ul li a{
 
 }
 .work .content .workBx{
-    width: 500px;
+    max-width: 500px;
     padding: 20px;
     min-width: 100px;
 
@@ -210,58 +225,12 @@ header.sticky ul li a{
 
 .work .content .workBx img:hover{
     max-width: 100%;
-    border:#2196f3 3px solid;
+    border:#f8002f 1px solid;
+    margin-top: -5%;
 
 }
 
 
-.contact{
-    background: #1a1717;
-    color:#2196f3;
-    
-}
-
-.contact .content{
-    border: #fff 1px solid;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.contact .content .form-contact{
-    padding: 15px;
-    border-top: #fff 1px solid;
-    border-bottom: #fff 1px solid;
-    height: 300px;
-    
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-
-.contact .content .form-contact input{
-    text-align: center;
-    border-radius: 0;
-    border: #2196f3 1px solid;
-    color: black;
-}
-
-.contact .content .form-contact #message{
-    text-align: center;
-    border-radius: 0;
-    border: #2196f3 1px solid;
-    color: black;
-    height: 100px;
-}
-
-.contact .content .form-contact .btn{
-
-    background-color: 2196f3;
-    border:none;
-}
 
 .about{
     border: black 1px solid;
@@ -303,6 +272,11 @@ header.sticky ul li a{
 .fa-github {
     background: #262626;
     color: white;
+}
+
+#about{
+    padding:10px;
+
 }
 
 
@@ -356,17 +330,7 @@ header.sticky ul li a{
         filter: invert(1);
 
     }
-    section{
-        padding: 100px 50px;
-
-    }
-    .banner{
-        padding: 150px 50px 100px;
-
-    }
-    .banner h2{
-        font-size: 1.5em;
-    }
+    
     .btn{
         margin-top: 10px;
         padding: 10px 20px;
@@ -380,5 +344,34 @@ header.sticky ul li a{
     header ul li a{
         font-size: 40px;
         padding: 20px;
+    }
+    .workBx img{
+        min-width: 350px;
+    }
+    .servicesBx{
+        min-width: 350px;
+    }
+
+}
+
+@media (max-width: 500px){
+    .banner img{
+        min-width: 300px;
+    }
+    .banner h2{
+        font-size: 2em;
+       
+    } 
+    .banner h3{
+        font-size: 1.5em;
+    }
+    .workBx img{
+        width: auto;
+    }
+    .servicesBx{
+        width: auto;
+    }
+    .work{
+        padding: 10px;
     }
 }
