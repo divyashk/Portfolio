@@ -161,7 +161,7 @@ header.sticky ul li a{
     background: #222;
     color: #fff;
     height: 350px;
-    min-width: 300;
+    min-width: 300px;
     max-width: 400px;
     margin:20px;
     transition: 0.5s;
