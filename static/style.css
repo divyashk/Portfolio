@@ -8,6 +8,9 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+a{
+    text-decoration: none;
+}
 a:hover{
     color:#f8002f;
 }
@@ -209,6 +212,11 @@ header.sticky ul li a{
     align-items: center;
     flex-wrap: wrap;
 
+}
+
+.work .content h4{
+
+    color: white;
 }
 .work .content .workBx{
     max-width: 500px;
