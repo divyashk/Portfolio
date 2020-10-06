@@ -233,8 +233,7 @@ header.sticky ul li a{
 
 .work .content .workBx img:hover{
     max-width: 100%;
-    border:#f8002f 1px solid;
-    margin-top: -5%;
+    box-shadow: 4px 4px 20px 4px #e87070;
 
 }
 
