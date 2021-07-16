@@ -21,7 +21,11 @@
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
         </ul>
     </header>
-    <section class='banner'>
+    
+        <section class='banner'>
+        <div id="particles-js"></div>
+        </div>
+
         <img src='../static/pic.jpg' alt=''>
         <div class='textBx'>
             <h2>Hey, I'm <br><span>Divyasheel</span></h2>
@@ -30,6 +34,8 @@
 
         </div>
     </section>
+    
+    
 
     <section class='services' id="skills">
         <div class='heading white'>
@@ -85,31 +91,63 @@
     <section class='work' id='work'>
         <div class='heading white'>
             <h1>
-                My Projects
+                My Work
             </h1>
         </div>
+       
         <div class="content">
             
+            <a href="http://saic.iitmandi.co.in">
+                
+                <div class="workBx">
+                    <img src="../static/work/saic.png" alt="">
+                </div>
+            </a>
+
+            <a href="http://music.divyasheel.com">
+                
+                <div class="workBx">
+                    <img src="../static/work/beatit.png" alt="">
+                </div>
+            </a>
+
+            <a href="http://covidtool.herokuapp.com">
+                
+                <div class="workBx">
+                    <img src="../static/work/cofinder.png" alt="">
+                </div>
+            </a>
+            
+
+            <a href="http://wecoder.ml">
+                
+                <div class="workBx">
+                    <img src="../static/work/wecoder.png" alt="">
+                </div>
+            </a>
+
+            <a href="http://quiz.iitmandi.co.in">
+                
+                <div class="workBx">
+                    <img src="../static/work/quiz.png" alt="">
+                </div>
+            </a>
+
             <a href="http://dblog.divyasheel.com/">     
-                <h4> Django </h4>
+               
                 <div class="workBx">
                     <img src="../static/work/django.png" alt="">
                 </div>
             </a>
             <a href="http://todophp.divyasheel.com">
-                <h4> PHP </h4>
+                
                 <div class="workBx">
                     <img src="../static/work/phptodo.png" alt="">
                 </div>
             </a>
-            <a href="http://music.divyasheel.com">
-                <h4> Flask </h4>
-                <div class="workBx">
-                    <img src="../static/work/beatit.png" alt="">
-                </div>
-            </a>
+            
             <a href="http://flaskblog.divyasheel.com">
-                <h4> Flask </h4>
+                
                 <div class="workBx">
                     <img src="../static/work/flask.png" alt="">
                 </div>
@@ -154,8 +192,9 @@
             </div>
        </div>
     </section>
-    
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
+    <script src="../static/js/particles.js"></script>
     <script type='text/javascript'>
         window.addEventListener('scroll',function(){
             var header = document.querySelector('header');
