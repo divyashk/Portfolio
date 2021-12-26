@@ -8,7 +8,7 @@ particlesJS("particles-js", {
       }
     },
     color: {
-      value: "#EE4B2B"
+      value: "#007FFF"
     },
     shape: {
       type: "circle",

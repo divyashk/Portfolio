@@ -199,6 +199,10 @@ header.sticky ul li a{
     font-weight: 600px;
 }
 
+
+.services .content .servicesBx ul{
+    list-style: none;
+}
 .work{
     background: #525252;
     text-align: center;
@@ -238,6 +242,64 @@ header.sticky ul li a{
 
 }
 
+
+.achieve{
+    background: #000000;
+    text-align: center;
+    min-height: 400px;
+    
+}
+
+.achieve .content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.achieve .content .servicesBx{
+    
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    height: 350px;
+    min-width: 300px;
+    max-width: 400px;
+    margin:20px;
+    transition: 0.5s;
+    text-align: center;
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    flex-direction: column;
+
+}    
+
+.achieve .content .servicesBx:hover{
+ background: #f8002f;
+}
+
+
+.achieve .content .servicesBx img{
+   max-width: 80px;
+   filter: invert(1);
+}
+
+
+
+.achieve .content .servicesBx h2{
+    max-width: 80px;
+    filter: invert(1);
+}
+
+.achieve .content .servicesBx h2{
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+
+.achieve .content .servicesBx ul{
+    list-style: none;
+}
 
 
 .about{
