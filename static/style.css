@@ -18,7 +18,7 @@ a.btn:hover{
     color: black;
 }
 section{
-    padding:100px;
+    padding:50px;
 }
 .banner{
     position : relative;
@@ -54,10 +54,10 @@ section{
 
 }
 .banner img{
-    width: 5%;
+    width: 100%;
     margin:0;
     padding:0;
-    min-width: 400px;
+    max-width: 420px;
     z-index: 1;
     box-shadow: 1 1 8px 2px rgba(0, 0, 0, 0.8);
 }
@@ -427,15 +427,13 @@ header.sticky ul li a{
 }
 
 @media (max-width: 500px){
-    .banner img{
-        min-width: 300px;
-    }
+
     .banner h2{
-        font-size: 2em;
+        font-size: 1.5em;
        
     } 
     .banner h3{
-        font-size: 1.5em;
+        font-size: 0.8em;
     }
     .workBx img{
         min-width: 200px;
@@ -448,7 +446,7 @@ header.sticky ul li a{
     }
 
     a.logo{
-        font-size: 1.5em;
+        font-size: 1.2em;
         
     }
 }
@@ -467,7 +465,7 @@ header.sticky ul li a{
         margin-bottom: 70px;
     }
     .banner h2{
-        font-size: 1.5em;
+        font-size: 1.2em;
        
     } 
     .banner h3{
